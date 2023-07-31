@@ -1,0 +1,95 @@
+.message {
+    &__content {
+        padding: 50px 0;
+        height: 100%;
+
+        background-image: url('@/assets/img/invite_bg.png');
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        background-color: #efeccf;
+
+        .wrapper {
+            justify-content: flex-start;
+            background-color: #fffce9d6;
+        }
+    }
+    &__item {
+        text-align: center;
+        font-family: 'Calm Extra';
+        font-weight: 300;
+        line-height: 1;
+
+        p {
+            line-height: 1.5;
+        }
+        &.title {
+            margin-top: 20px;
+
+            font-family: 'Bickham Script Three';
+            font-style: italic;
+            font-weight: 500;
+            font-size: 40px;
+        }
+        &.wait {
+            margin: 20px 0;
+
+            font-family: Agonia;
+            font-size: 14px;
+        }
+        &.caption {
+            margin: 40px 0;
+
+            font-size: 12px;
+            font-family: Agonia;
+            white-space: nowrap;
+        }
+        .confirm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__title {
+                font-size: 25px;
+                margin: 30px 0 20px 0;
+            }
+
+            &__input {
+                padding: 7px;
+
+                display: block;
+
+                height: 30px;
+                width: 100%;
+
+                font-size: 16px;
+                line-height: 16px;
+                text-align: center;
+
+                border-radius: 20px;
+                background-color: #e4e2cfd6;
+
+                &:placeholder-shown {
+                    width: 130px;
+                    margin: 0 auto;
+                }
+                &:focus {
+                    width: 100%;
+                }
+                transition: width 0.3s;
+            }
+            &__btn {
+                margin-top: 35px;
+                display: block;
+
+                width: 100%;
+
+                border-radius: 20px;
+                background-color: #a1977f;
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+}

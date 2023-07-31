@@ -1,13 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Приглашение</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <header class="section header">
+        <div class="wrapper">
+            <div class="names">
+                <div class="name1">Владислав</div>
+                <div class="name2">Татьяна</div>
+            </div>
+            <div class="invite">
+                <div class="invite__text">Приглашаем на свадьбу</div>
+                <div class="invite__date date">
+                    <div class="date__item weekday">Cуббота</div>
+                    <div class="date__item main-date">
+                        <div class="date__subitem m">сентябрь</div>
+                        <div class="date__subitem d">23</div>
+                        <div class="date__subitem y">2023</div>
+                    </div>
+                    <div class="date__item time"><span>16:30</span></div>
+                </div>
+            </div>
+            <div class="timer">
+                <div class="timer__item w">
+                    <div class="value">x</div>
+                    <div class="label">недель</div>
+                </div>
+                <div class="timer__item d">
+                    <div class="value">x</div>
+                    <div class="label">дней</div>
+                </div>
+                <div class="timer__item h">
+                    <div class="value">x</div>
+                    <div class="label">часов</div>
+                </div>
+                <div class="timer__item m">
+                    <div class="value">x</div>
+                    <div class="label">минут</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section message">
+            <div class="message__content">
+                <div class="wrapper">
+                    <div class="message__item title">Дорогой <br> Гость!</div>
+                    <div class="message__item">
+                        <p>Мы рады сообщить Вам, что 23.09.2023 состоится самое главное торжество в нашей жизни - день нашей свадьбы!</p>
+                        <p>Приглашаем Вас разделить с нами радость этого незабываемого дня.</p>
+                    </div>
+                    <div class="message__item wait">Ждем Вас!</div>
+                    <div class="message__item">23.09.2023 в 16:30</div>
+                    <div class="message__item caption">Ваши Владислав и Татьяна</div>
+                    <div class="message__item">Стиль одежды официальный.</div>
+                    <div class="message__item confirm">
+                        <p class="confirm__title">Подтвердите своё участие</p>
+                        <input class="confirm__input" type="text" placeholder="Кто вы?">
+                        <button class="confirm__btn">Подтвердить</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
 </html>

@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Cormorant Infant';
+    src: url('CormorantInfant-LightItalic.eot');
+    src: local('Cormorant Infant Light Italic'), local('CormorantInfant-LightItalic'),
+        url('CormorantInfant-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('CormorantInfant-LightItalic.woff2') format('woff2'),
+        url('CormorantInfant-LightItalic.woff') format('woff'),
+        url('CormorantInfant-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cormorant Infant';
+    src: url('CormorantInfant-SemiBold.eot');
+    src: local('Cormorant Infant SemiBold'), local('CormorantInfant-SemiBold'),
+        url('CormorantInfant-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('CormorantInfant-SemiBold.woff2') format('woff2'),
+        url('CormorantInfant-SemiBold.woff') format('woff'),
+        url('CormorantInfant-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant Infant';
+    src: url('CormorantInfant-Bold.eot');
+    src: local('Cormorant Infant Bold'), local('CormorantInfant-Bold'),
+        url('CormorantInfant-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CormorantInfant-Bold.woff2') format('woff2'),
+        url('CormorantInfant-Bold.woff') format('woff'),
+        url('CormorantInfant-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant Infant';
+    src: url('CormorantInfant-SemiBoldItalic.eot');
+    src: local('Cormorant Infant SemiBold Italic'), local('CormorantInfant-SemiBoldItalic'),
+        url('CormorantInfant-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('CormorantInfant-SemiBoldItalic.woff2') format('woff2'),
+        url('CormorantInfant-SemiBoldItalic.woff') format('woff'),
+        url('CormorantInfant-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cormorant Infant';
+    src: url('CormorantInfant-MediumItalic.eot');
+    src: local('Cormorant Infant Medium Italic'), local('CormorantInfant-MediumItalic'),
+        url('CormorantInfant-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('CormorantInfant-MediumItalic.woff2') format('woff2'),
+        url('CormorantInfant-MediumItalic.woff') format('woff'),
+        url('CormorantInfant-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cormorant Infant';
+    src: url('CormorantInfant-BoldItalic.eot');
+    src: local('Cormorant Infant Bold Italic'), local('CormorantInfant-BoldItalic'),
+        url('CormorantInfant-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('CormorantInfant-BoldItalic.woff2') format('woff2'),
+        url('CormorantInfant-BoldItalic.woff') format('woff'),
+        url('CormorantInfant-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cormorant Infant';
+    src: url('CormorantInfant-Light.eot');
+    src: local('Cormorant Infant Light'), local('CormorantInfant-Light'),
+        url('CormorantInfant-Light.eot?#iefix') format('embedded-opentype'),
+        url('CormorantInfant-Light.woff2') format('woff2'),
+        url('CormorantInfant-Light.woff') format('woff'),
+        url('CormorantInfant-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant Infant';
+    src: url('CormorantInfant-Italic.eot');
+    src: local('Cormorant Infant Italic'), local('CormorantInfant-Italic'),
+        url('CormorantInfant-Italic.eot?#iefix') format('embedded-opentype'),
+        url('CormorantInfant-Italic.woff2') format('woff2'),
+        url('CormorantInfant-Italic.woff') format('woff'),
+        url('CormorantInfant-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cormorant Infant';
+    src: url('CormorantInfant-Medium.eot');
+    src: local('Cormorant Infant Medium'), local('CormorantInfant-Medium'),
+        url('CormorantInfant-Medium.eot?#iefix') format('embedded-opentype'),
+        url('CormorantInfant-Medium.woff2') format('woff2'),
+        url('CormorantInfant-Medium.woff') format('woff'),
+        url('CormorantInfant-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant Infant';
+    src: url('CormorantInfant-Regular.eot');
+    src: local('Cormorant Infant Regular'), local('CormorantInfant-Regular'),
+        url('CormorantInfant-Regular.eot?#iefix') format('embedded-opentype'),
+        url('CormorantInfant-Regular.woff2') format('woff2'),
+        url('CormorantInfant-Regular.woff') format('woff'),
+        url('CormorantInfant-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
