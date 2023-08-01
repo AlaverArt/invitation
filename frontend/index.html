@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Приглашение</title>
+    <title>Приглашение на свадьбу - Владислав &#38; Татьяна (23.09.2023)</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=59e732af-9762-4e1c-a73a-c6f1b099a965&lang=ru_RU"
+        type="text/javascript"></script> -->
 </head>
+
 <body>
     <header class="section header">
         <div class="wrapper">
             <div class="names">
                 <div class="name1">Владислав</div>
                 <div class="name2">Татьяна</div>
+                <div class="amp">&#38;</div>
             </div>
             <div class="invite">
                 <div class="invite__text">Приглашаем на свадьбу</div>
@@ -22,7 +27,7 @@
                         <div class="date__subitem d">23</div>
                         <div class="date__subitem y">2023</div>
                     </div>
-                    <div class="date__item time"><span>16:30</span></div>
+                    <div class="date__item time"><span>16<span style="font-family: 'initial';">:</span>30</span></div>
                 </div>
             </div>
             <div class="timer">
@@ -49,23 +54,94 @@
         <section class="section message">
             <div class="message__content">
                 <div class="wrapper">
-                    <div class="message__item title">Дорогой <br> Гость!</div>
+                    <div class="message__item title">Дорогой гость!</div>
                     <div class="message__item">
-                        <p>Мы рады сообщить Вам, что 23.09.2023 состоится самое главное торжество в нашей жизни - день нашей свадьбы!</p>
+                        <p>Мы рады сообщить Вам, что 23.09.2023 состоится самое главное торжество в нашей жизни - день
+                            нашей свадьбы!</p>
                         <p>Приглашаем Вас разделить с нами радость этого незабываемого дня.</p>
                     </div>
-                    <div class="message__item wait">Ждем Вас!</div>
-                    <div class="message__item">23.09.2023 в 16:30</div>
+                    <div class="message__item wait">
+                        Ждем Вас!
+                        <br>23.09.2023 в 16:30
+                        <br>Банкетный зал Династия
+                        <br>г. Приморско-Ахтарск,
+                        <br>ул. Зоненко, 132/2
+                        <br>Стиль одежды официальный.
+                    </div>
                     <div class="message__item caption">Ваши Владислав и Татьяна</div>
-                    <div class="message__item">Стиль одежды официальный.</div>
                     <div class="message__item confirm">
                         <p class="confirm__title">Подтвердите своё участие</p>
-                        <input class="confirm__input" type="text" placeholder="Кто вы?">
+                        <div class="confirm__input-wrapper">
+                            <input class="confirm__input name" type="text" placeholder="Кто вы?">
+                            <input class="confirm__input count" type="text" value="1"><span class="count-label">человек</span>
+                        </div>
                         <button class="confirm__btn">Подтвердить</button>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="section schedule">
+            <div class="schedule__content">
+                <div class="schedule__inner-wrapper">
+                    <div class="wrapper">
+                        <div class="schedule__title">Свадебное расписание</div>
+                        <div class="schedule__item">
+                            <div class="schedule__time">
+                                <div class="schedule__t">16:30</div>
+                                <div class="schedule__d">23.09.2023</div>
+                            </div>
+                            <div class="schedule__desc">
+                                <div class="desc-title">Сбор гостей</div>
+                                <div class="desc-content">Банкетный зал Династия</div>
+                            </div>
+                        </div>
+                        <div class="schedule__item">
+                            <div class="schedule__time">
+                                <div class="schedule__t">17:00</div>
+                                <div class="schedule__d">23.09.2023</div>
+                            </div>
+                            <div class="schedule__desc">
+                                <div class="desc-title">Выездная регистрация</div>
+                                <div class="desc-content">Банкетный зал Династия</div>
+                            </div>
+                        </div>
+                        <div class="schedule__item">
+                            <div class="schedule__time">
+                                <div class="schedule__t">18:00</div>
+                                <div class="schedule__d">23.09.2023</div>
+                            </div>
+                            <div class="schedule__desc">
+                                <div class="desc-title">Банкет</div>
+                                <div class="desc-content">Банкетный зал Династия</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div id="yamap" style="width: calc(100% - 60px); max-width: 700px; height: 500px;margin: 0 auto;"></div>
+        </section>
     </main>
+    <!-- <script type="text/javascript">
+        let myMap = null;
+        ymaps.ready(init);
+        function init() {
+            // Создание карты.
+            myMap = new ymaps.Map("yamap", {
+                center: [46.041050467893434, 38.172407874204275],
+                zoom: 17
+            });
+
+            let placemark = new ymaps.Placemark([46.041050467893434, 38.172407874204275], {
+
+            }, {
+                preset: 'islands#redDotIcon',
+                iconColor: '#ff0000'
+            });
+            myMap.geoObjects.add(placemark);
+        }
+    </script> -->
 </body>
+
 </html>

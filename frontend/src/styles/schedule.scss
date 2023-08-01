@@ -1,0 +1,64 @@
+.schedule {
+    background-image: url('@/assets/img/invite_bg.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 0;
+    max-height: 500px;
+    overflow-y: hidden;
+    
+    &__content {
+        height: 100%;
+        background-color: #ffffff8e;
+        .wrapper {
+            justify-content: center;
+            //backdrop-filter: blur(5px);
+            background-color: #fffce980;
+            height: fit-content;
+            padding: 30px;
+            margin: 0;
+            width: 100%;
+        }
+    }
+    &__inner-wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__title {
+        font-family: 'Bickham Script Three';
+        font-size: 50px;
+        line-height: 1;
+        text-align: center;
+    }
+    
+    &__item {
+        margin-top: 20px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        width: 100%;
+
+        font-family: 'Calm Extra';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1;
+        text-align: end;
+
+        .desc-title {
+            font-size: 22px;
+        }
+
+        &__desc {
+            align-self: flex-start;
+        }
+    }
+
+    &__t {
+        font-size: 25px;
+    }
+}

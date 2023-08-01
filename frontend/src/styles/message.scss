@@ -1,4 +1,5 @@
 .message {
+    height: fit-content;
     &__content {
         padding: 50px 0;
         height: 100%;
@@ -11,6 +12,7 @@
         background-color: #efeccf;
 
         .wrapper {
+            padding: 30px;
             justify-content: flex-start;
             background-color: #fffce9d6;
         }
@@ -18,6 +20,7 @@
     &__item {
         text-align: center;
         font-family: 'Calm Extra';
+        font-size: 18px;
         font-weight: 300;
         line-height: 1;
 
@@ -25,25 +28,31 @@
             line-height: 1.5;
         }
         &.title {
-            margin-top: 20px;
+            //margin-top: 20px;
 
             font-family: 'Bickham Script Three';
             font-style: italic;
             font-weight: 500;
-            font-size: 40px;
+            font-size: 50px;
+            //line-height: 3;
         }
         &.wait {
-            margin: 20px 0;
+            margin-top: 20px;
 
-            font-family: Agonia;
-            font-size: 14px;
+            font-family: 'Calm Extra';
+            font-size: 22px;
+            line-height: 1.2;
         }
         &.caption {
-            margin: 40px 0;
+            margin: 40px 0 30px 0;
 
-            font-size: 12px;
-            font-family: Agonia;
+            font-size: 15px;
+            font-family: 'Agonia';
             white-space: nowrap;
+        }
+        &.time {
+            font-size: 22px;
+            font-weight: 500;
         }
         .confirm {
             display: flex;
@@ -52,32 +61,47 @@
 
             &__title {
                 font-size: 25px;
-                margin: 30px 0 20px 0;
+                margin: 0px 0 20px 0;
+            }
+
+            &__input-wrapper {
+                position: relative;
+                top: 0;
+                left: 0;
+
+                .count-label {
+                    content: 'человек';
+
+                    position: absolute;
+                    bottom: -12px;
+                    right: 0px;
+
+                    font-size: 14px;
+
+                    user-select: none;
+                }
             }
 
             &__input {
                 padding: 7px;
 
-                display: block;
-
                 height: 30px;
-                width: 100%;
+
+                border-radius: 20px;
+                background-color: #e4e2cfd6;
 
                 font-size: 16px;
                 line-height: 16px;
                 text-align: center;
 
-                border-radius: 20px;
-                background-color: #e4e2cfd6;
+                &.name {
+                    width: calc(100% - 60px);
+                }
 
-                &:placeholder-shown {
-                    width: 130px;
-                    margin: 0 auto;
+                &.count {
+                    width: 40px;
+                    font-size: 20px;
                 }
-                &:focus {
-                    width: 100%;
-                }
-                transition: width 0.3s;
             }
             &__btn {
                 margin-top: 35px;
