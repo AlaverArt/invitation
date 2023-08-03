@@ -3,10 +3,11 @@ FROM node as builder
 WORKDIR /app
 
 COPY ./package.json .
-RUN npm install
+COPY ./.browserslistrc .
 COPY ./src /app/src
 COPY ./webpack.config.js .
-RUN npm run build
+COPY ./index.html .
+RUN npm install -y && npm run build
 
 FROM nginx
 

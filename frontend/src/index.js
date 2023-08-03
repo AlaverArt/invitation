@@ -2,7 +2,7 @@ import '@/styles/main.scss';
 import '../index.html';
 import { createTimer } from './timer';
 
-const backendURL = 'http://localhost:3000';
+const backendURL = 'http://95.163.234.38:3000';
 
 async function sendConfirm() {
     const name = this.confirmInputName.value.trim();
@@ -50,5 +50,5 @@ document.addEventListener('DOMContentLoaded', () => {
     const confirmInputName = document.querySelector('.confirm__input.name');
     const confirmInputCount = document.querySelector('.confirm__input.count');
     
-    confirmBtn.addEventListener('click', sendConfirm.bidn({ confirmInputCount, confirmInputName }));
+    confirmBtn.addEventListener('click', sendConfirm.bind({ confirmInputCount, confirmInputName }));
 })

@@ -9,3 +9,5 @@ services:
     build: ./backend
     ports:
       - "3000:3000"
+    volumes:
+      - ./backend/confirm_data.json:/app/confirm_data.json

@@ -10,12 +10,12 @@ const TelegramBot = require('node-telegram-bot-api');
 const bot = new TelegramBot(telegramConfig.botToken, {polling: true});
 
 let corsOptions = {
-    origin: ['http://localhost:8080'],
+    origin: ['http://95.163.234.38', 'https://95.163.234.38'],
     //optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 
 function renderMessage(comfirmData) {
-    const dtFormatter = new Intl.DateTimeFormat('ru', { hour: '2-digit', minute: '2-digit' });
+    const dtFormatter = new Intl.DateTimeFormat('ru', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
     let result = '';
     let userList = '';
     let allUsersCount = 0;
@@ -100,9 +100,11 @@ class Application {
         } catch (e) {
             response.status = 'error';
             response.err = e.message;
-            res.json(response);
+            res.status(400).json(response);
+            return;
         }
-        res.json(response);
+        res.status(200).json(response);
+        return;
     }
 }
 
