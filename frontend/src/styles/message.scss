@@ -113,6 +113,23 @@
                 background-color: #a1977f;
                 color: white;
                 font-weight: bold;
+                &.loading {
+                    background-color: green;
+                }
+            }
+        }
+        .delete-confirm-button {
+            margin-top: 35px;
+            display: block;
+
+            width: 100%;
+
+            border-radius: 20px;
+            background-color: #a1977f;
+            color: white;
+            font-weight: bold;
+            &.loading {
+                background-color: green;
             }
         }
     }
