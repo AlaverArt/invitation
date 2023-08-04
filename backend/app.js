@@ -23,7 +23,7 @@ function renderMessage(comfirmData) {
 
     for(const [name, user] of Object.entries(comfirmData)) {
         const countNum = Number(user.count);
-        const confirmDate = dtFormatter.format(new Date(user.confirmDate));
+        const confirmDate = dtFormatter.format(new Date(user.confirmDate + (new Date()).getTimezoneOffset()*60*1000));
 
         userList += `${i}. ${user.name}\n[ ${Math.abs(countNum)} чел. ]    ${confirmDate ?? ''}\n\n`;
         allUsersCount += Math.abs(countNum);
