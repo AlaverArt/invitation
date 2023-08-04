@@ -28,13 +28,10 @@
             line-height: 1.5;
         }
         &.title {
-            //margin-top: 20px;
-
             font-family: 'Bickham Script Three';
             font-style: italic;
             font-weight: 500;
             font-size: 50px;
-            //line-height: 3;
         }
         &.wait {
             margin-top: 20px;
@@ -83,7 +80,7 @@
             }
 
             &__input {
-                padding: 7px;
+                padding: 0 4px;
 
                 height: 30px;
 
@@ -100,7 +97,6 @@
 
                 &.count {
                     width: 40px;
-                    font-size: 20px;
                 }
             }
             &__btn {

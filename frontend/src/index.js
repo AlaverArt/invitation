@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         timerWeekValue.textContent = week;
     }
 
-    const tm = createTimer('2023-09-23 16:30:00 GMT+0300', updateTimerElem);
+    const tm = createTimer('2023/09/23 16:30:00 GMT+0300', updateTimerElem);
 
     const elems = {};
     elems.confirmBtn = document.querySelector('.confirm__btn');

@@ -73,7 +73,8 @@
                         <p class="confirm__title">Подтвердите своё участие</p>
                         <div class="confirm__input-wrapper">
                             <input class="confirm__input name" type="text" placeholder="Введите ФИО">
-                            <input class="confirm__input count" type="text" value="1"><span class="count-label">человек</span>
+                            <input class="confirm__input count" type="text" maxlength="1" value="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
+                            <span class="count-label">человек</span>
                         </div>
                         <button class="confirm__btn">Подтвердить</button>
                     </div>
