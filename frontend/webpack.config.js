@@ -61,6 +61,7 @@ module.exports = {
             filename: isDevMode ? '[name].css' : '[name].[contenthash].css',
         }),
         new HtmlWebpackPlugin({
+            favicon: path.resolve(__dirname, 'favicon.png'),
             template: path.resolve(__dirname, 'index.html'),
         })
     ],
